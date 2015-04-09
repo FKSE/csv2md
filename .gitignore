@@ -1,0 +1,4 @@
+vendor
+.idea
+fields_head.csv
+composer.lock
