@@ -81,7 +81,11 @@ class ConvertCommand extends Command
             $line = '|' . implode(' | ', $row) . '|';
 
             if ($table == '') {
-                $line .=  "\n" . str_repeat('-', strlen($line));
+                $headers = [];
+                foreach ($row as $field) {
+                    $headers[] =  str_repeat('-', strlen($field));
+                }
+                $line .= "\n|" . implode(' | ', $headers) . '|';
             }
 
             $table .= $line . "\n";
