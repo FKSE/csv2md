@@ -1,7 +1,7 @@
 {
     "name": "fkse/csv2md",
     "description": "Convert CSV files to Markdown files",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "autoload": {
       "psr-4": {"FKSE\\CsvToMarkdown\\": "src/"}
     },
